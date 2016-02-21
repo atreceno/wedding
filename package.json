@@ -1,0 +1,22 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "Responsive Wedding Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atreceno/wedding.git"
+  },
+  "keywords": [
+    "wedding"
+  ],
+  "author": "Agustín Treceño <agustin.treceno@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atreceno/wedding/issues"
+  },
+  "homepage": "https://github.com/atreceno/wedding"
+}
