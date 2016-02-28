@@ -14,7 +14,7 @@ router.post('/', function(req, res, next) {
   if (req.body.name) {
     var data = {
       from: 'Our Wedding in Toledo <do-not-reply@anyaagus.com>',
-      to: 'agustin.treceno@gmail.com',
+      to: ['agustin.treceno@gmail.com', 'anya.fainberg@gmail.com'],
       subject: 'Anya & Agus Wedding - RSVP',
       text: JSON.stringify(req.body)
     };
