@@ -73,6 +73,7 @@ header h1 {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }*/
 
+/*
 .arrow-down {
   position: absolute;
   bottom: 0;
@@ -86,12 +87,11 @@ header h1 {
 }
 
 
-
 @media(max-width:768px) {
 	header {
-	min-height: 820px;
-}
-}
+	  min-height: 820px;
+  }
+}*/
 
 /*********************************************************/
 /* INFORMATIONS
