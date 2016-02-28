@@ -53,15 +53,15 @@ img {
 /* HEADER
 /*********************************************************/
 header {
-    width: 100%;
-    height: 100%;
-    background: url(../images/headerbg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-	position: relative;
-	max-height: 800px;
+  background: url("../images/headerbg.jpg") no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  height: 100%;
+/*	position: relative;
+	max-height: 800px; */
 }
 
 header h4 {
@@ -394,8 +394,11 @@ nav ul li a:hover {
 /* TESTIMONIALS
 /*********************************************************/
 #testimonials {
-	background: url("../images/testimonials.jpg") no-repeat fixed center top / cover rgba(0, 0, 0, 0);
-	padding: 20px;
+	background: url("../images/testimonials.jpg") no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 #testimonials h1 {
@@ -618,7 +621,11 @@ nav ul li a:hover {
 /* SUBSCRIBE
 /*********************************************************/
 #subscribe {
-	background: url("../images/subscribebg.jpg") no-repeat fixed center top / cover rgba(0, 0, 0, 0);
+	background: url("../images/subscribebg.jpg") no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 	padding: 20px;
 }
 
@@ -995,7 +1002,7 @@ footer p {
 }
 
 span.imghover {
-	background: url(../images/search.png) center center no-repeat #00a8d6;
+	background: url("../images/search.png") center center no-repeat #00a8d6;
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
@@ -1069,12 +1076,12 @@ span.imghover:hover {
 /*********************************************************/
 #headercomingsoon {
 	width: 100%;
-    height: 100%;
-    background-image: url(../images/headerbg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  height: 100%;
+  background: url("../images/headerbg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 	position: relative;
 }
 
