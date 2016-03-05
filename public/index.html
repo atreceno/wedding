@@ -14,14 +14,14 @@
   
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800" type="text/css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">  
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">  
    <link rel="stylesheet" href="css/style.css" type="text/css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
    <script>
      if(typeof window.orientation === 'undefined') {
        $('head').append('<link rel="stylesheet" href="css/animate.css"/>');
@@ -149,7 +149,7 @@
       						</div>
       						<div class="modal-body">
         						<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fSi_08eRGiI?list=PLIOwb0oIXPalImjY9C9BvrmZpGCBCLr3r" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c6MG5v8oB8Q?list=PLIOwb0oIXPalImjY9C9BvrmZpGCBCLr3r" frameborder="0" allowfullscreen></iframe>
 								</div>
       						</div>
     						</div>
@@ -187,7 +187,7 @@
 								<li><i class="fa fa-institution"></i> Hacienda del Cardenal</li>
 								<li><i class="fa fa-map-marker"></i> Paseo de Recaredo, 24 - 45004 Toledo</li>
 								<li><i class="fa fa-clock-o"></i> 8:30pm</li>
-								<li><i class="fa fa-star-o"></i> After-dinner drinks to be held at a different location (details coming soon)</li>
+								<li><i class="fa fa-star-o"></i> After-dinner drinks to be held at an alternate location (details coming soon)</li>
 							</ul>
 						</div>
 						
@@ -222,7 +222,8 @@
 						</div>
 						
 						<div class="table-btn">
-							<a href="http://www.loslavaderosderojas.com" class="btn btn-primary" target="_blank">MORE INFO</a>
+              <!-- http://www.loslavaderosderojas.com -->
+							<a href="https://www.google.co.uk/maps/place/Finca+los+Lavaderos+de+Rojas/@39.8686182,-4.1478667,12z/data=!4m15!1m12!4m11!1m3!2m2!1d-4.0709624!2d39.8683547!1m6!1m2!1s0xd6a74d7e3fe63ef:0x7e994324bb0abbc2!2sde+los,+Calle+Lavaderos,+45128+Menasalbas,+Toledo,+Spain!2m2!1d-4.0778267!2d39.8686393!3m1!1s0xd6a74d7e3fe63ef:0x7e994324bb0abbc2" class="btn btn-primary" target="_blank">MORE INFO</a>
 						</div>
 					</div>
 				</div>
@@ -439,7 +440,7 @@
 					</div>
           <div class="col-md-6">
 						<h3>Things to do in Toledo</h3>
-            <p>We will be organizing a tour of Toledo on September 1, at 2pm. Please indicate if you are interested in joining when you RSVP. The cost will be approximately 20€ per person. In addition to this, you might consider going for tapas (map coming soon) and paying a visit to Pastelería Santo Tomé to try the World's best marzipans.</p>
+            <p>We will be organizing a tour of Toledo on September 1, at 2pm. Please indicate if you are interested in joining when you RSVP. The cost will be approximately 20€ per person. In addition to this, you might consider going for tapas (map coming soon) and paying a visit to Pastelería Santo Tomé to try the world's best marzipan.</p>
 					</div>
 				</div>
 				
@@ -495,7 +496,7 @@
 			<div class="contactbg">
 			<form action="/" method="post">
 			<div class="row">
-				<h3 class="text-center text-uppercase">RSVP</h3>
+				<h3 class="text-center text-uppercase">RSVP<br/><small>Please respond by June 15th</small></h3>
 				<div class="col-md-12">
 					<label><input type="checkbox" id="tour" name="tour"/> I would like to attend the tour of Toledo on Sep. 1 (tour cost ≈20€)</label>
 				</div>
@@ -506,7 +507,10 @@
 					<label><input type="checkbox" id="wedding" name="wedding"/> I would like to attend the wedding</label>
 				</div>
 				<div class="col-md-12">
-					<label><input type="checkbox" id="lunch" name="lunch"/> I would like to attend the lunch the day after (meal cost ≈25€)</label>
+					<label><input type="checkbox" id="lunch" name="lunch"/> I would like to attend the lunch the following day (meal cost ≈25€)</label>
+				</div>
+				<div class="col-md-12">
+					<label><input type="checkbox" id="notgoing" name="notgoing"/> Devastated I will be unable to attend</label>
 				</div>
 				<div class="col-md-6">
 					<input type="text" id="name" name="name" placeholder="Name" required="required"/>
@@ -515,7 +519,7 @@
 					<input type="email" id="email" name="email" placeholder="E-mail" required="required"/>
 				</div>
 				<div class="col-md-12">
-					<input type="text" id="song" name="song" placeholder="Favourite party song" required="required"/>
+					<input type="text" id="song" name="song" placeholder="I promise to dance if you play..." required="required"/>
 				</div>
 			</div>
 				<textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
@@ -555,7 +559,7 @@
 	<footer>
 		<div class="container text-center">
 			<a href="#" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
-			<p class="text-center">Designed and built with all the love in the World by <a href="https://twitter.com/atreceno" target="_blank">@atreceno</a>.</p>
+			<p class="text-center">Designed and built with all the love in the world by <a href="https://twitter.com/atreceno" target="_blank">@atreceno</a>.</p>
 		</div>
 	</footer>
 	<!-- Footer End -->
