@@ -400,17 +400,20 @@ nav ul li a:hover {
 /* TESTIMONIALS
 /*********************************************************/
 #testimonials {
-	background: url("../images/el-alcazar.jpg") no-repeat center top;
+	background: url("../images/testimonials.jpg") no-repeat;
+  background-position: center top;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+/*  min-height: 500px; */
 }
 
 @media(max-device-width:1024px) {
 	#testimonials {
     background-attachment: scroll;
+    background-position: center bottom;
   }
 }
 
