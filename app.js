@@ -17,14 +17,16 @@ app.enable('trust proxy');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(fuction(req, res, next) {
+
+// Redirect from http to https
+function tohttps(req, res, next) {
   if(req.secure) {
     next();
   } else {
     res.redirect('https://' + req.headers.host + req.url);
   }
-});
-
+}
+app.use(tohttps);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
