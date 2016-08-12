@@ -58,7 +58,7 @@ $(document).ready(function() {
 
 var donation;
 var handler = StripeCheckout.configure({
-  key: 'pk_test_0TU79n6iUYVlIJs6hCiTWi6H',
+  key: 'pk_live_7AVH9hM6g3CWGqaeDnkuKXCm', // 'pk_test_0TU79n6iUYVlIJs6hCiTWi6H',
   image: 'images/portfolio/first-date.png',
   locale: 'auto',
   name: 'Our wedding in Toledo',
