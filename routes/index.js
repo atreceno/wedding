@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var router = express.Router();
 var mailgun = require('mailgun-js')({apiKey: 'key-fe56da0dfc8f46a5115f33066b608419', domain: 'sandboxfb062be13e184f1f9a1f2028f16b893b.mailgun.org'});
-var stripe = require("stripe")("sk_test_nogrwou7dFpo0b4tVp09PHBf");
+var stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 /* GET home page */
 router.get('/', function(req, res, next) {
