@@ -19,14 +19,16 @@ app.enable('trust proxy');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 // Redirect from http to https
-function tohttps(req, res, next) {
+function enforcesec(req, res, next) {
   if(req.secure) {
     next();
   } else {
     res.redirect('https://' + req.headers.host + req.url);
   }
 }
-app.use(tohttps);
+if (app.get('env') != 'development') {
+  app.use(enforcesec);
+};
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var router = express.Router();
 var mailgun = require('mailgun-js')({apiKey: 'key-fe56da0dfc8f46a5115f33066b608419', domain: 'sandboxfb062be13e184f1f9a1f2028f16b893b.mailgun.org'});
+var stripe = require("stripe")("sk_test_nogrwou7dFpo0b4tVp09PHBf");
 
 /* GET home page */
 router.get('/', function(req, res, next) {
@@ -27,6 +28,28 @@ router.post('/', function(req, res, next) {
   }
 
   res.sendFile(path.join(__dirname, '../public/index.html'));
+});
+
+router.post('/stripes', function(req, res, next) {
+  console.log('Processing payment: ');
+  console.log(req.body); // tokenid, email, livemode, amount
+
+  stripe.charges.create({
+    amount: req.body.amount,
+    currency: "gbp",
+    source: req.body.tokenid, // obtained with Stripe.js
+    description: "Wedding gift"
+  }, function(err, charge) {
+    // asynchronously called
+    if (err) {
+      console.log(err);
+      res.send('error');
+    } else {
+      console.log(charge.id);
+      res.send('success');
+    }
+  });
+
 });
 
 module.exports = router;
